@@ -1,0 +1,85 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.Bg-Mountain-Header
+{
+    background-image: url(./media/switzerland-862870_1920.jpg);
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(IMAGE_URL); */
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2962359943977591) 50%), url(./media/switzerland-862870_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 0;
+    height: 90vh;
+    position: relative;
+}
+
+.Bg-Mountain-Header-2
+{
+    position: absolute;
+    top: 42%;
+    right: 41%;
+    
+    background-image: url(./media/mountains.png);
+    height: 540px;
+    width: 1245px;
+    background-repeat: no-repeat;
+    background-position:left;
+}
+
+.Descript-Container
+{
+    width: 50%;
+}
+
+.Descript-Container::before
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d"; /* Codice per l'icona utente */
+    font-weight: 900;
+    margin-right: 8px;
+    color: #007bff;   
+}
+
+.Descript-Container::after
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e"; /* Codice per l'icona utente */
+    font-weight: 900;
+    margin-right: 8px;
+    color: #007bff; 
+}
+
+.Timeline
+{
+    position: relative;
+    background-color: red;
+    height: 4px;
+    width: 100%;
+    border-radius: 20%;
+
+    right: 145px;
+}
+
+.Timeline::before
+{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+
+    border-radius: 50%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
