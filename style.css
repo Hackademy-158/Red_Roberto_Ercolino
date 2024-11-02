@@ -1,8 +1,22 @@
+:root
+{
+    --DR: darkred;
+    --Second_Color: #C67F7F;
+    --Third_Color: #ececec;
+    --BG_Color: #d0aeae;
+}
+/* darkred, #C67F7F, #ececec */
+
 *
 {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+.Bg_StartColor
+{
+    background-color: var(--BG_Color);
 }
 
 .Bg-Mountain-Header
@@ -22,13 +36,16 @@
 {
     position: absolute;
     top: 42%;
-    right: 41%;
-    
-    background-image: url(./media/mountains.png);
+    right: 35%;
+    mask-image: url(./media/mountains.png);
+    background-color: var(--BG_Color);
+
+
+    /* background-image: url(./media/mountains.png); */
     height: 540px;
     width: 1245px;
     background-repeat: no-repeat;
-    background-position:left;
+    background-size: cover;
 }
 
 .Descript-Container
@@ -79,6 +96,48 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.IconText
+{
+    position: relative;
+    right: 130px;
+}
+
+/* Button Description */
+.BDes
+{
+    background-color: red;
+    color: white;
+    height: 50px;
+    z-index: 1;
+}
+
+.Bg_TreesPos
+{
+    position: relative;
+    z-index: 0;
+
+    bottom: 130px;
+}
+
+.Bg_Trees
+{   
+    height: 650px;
+    width: auto;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--BG_Color);
+    background-image: url(./media/trees2.png);
+}
+
+.V-Timeline::before
+{
+    content: "";
+    background-color: red;
+    width: 10px;
+    height: 100px;
 }
 
 
